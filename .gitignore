@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+
+#Automatically Generate Mac Files
+.DS_Store

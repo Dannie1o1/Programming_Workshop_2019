@@ -43,7 +43,7 @@ class House
 
     void addOwner(string requestor, string newOwner)
     {	
-        // Check if element 22 exists in vector
+        // Check if requester is already an owner
         vector<string>::iterator it = find(listOfOwners.begin(), listOfOwners.end(), requestor);
         if (it != listOfOwners.end())
         {

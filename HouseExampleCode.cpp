@@ -61,6 +61,18 @@ class House
         return;
     }
 
+    void addRoom(string owner, int floor)
+    {
+
+    }
+
+    void addFloor()
+    {
+        
+    }
+
+
+
     ~House ()
     {
         cout << "House Deconstructor is being called" << endl;

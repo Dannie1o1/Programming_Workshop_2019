@@ -4,10 +4,12 @@ class House
 {
     private:
     //Only properties inside of the house can be access by those who are inside of the class
-    vector < string > listOfOwners;
+    static int numberOfHouses;
+    vector <string> listOfOwners;
     vector <string> listOfRooms;
-    bool anyOneHome;
+    int numberOfFloors;
     string nameOfHouse;
+   
 
     protected:
     //What other properties of your house is shared with other things (Garage, Insurance, Garden, Pool, etc.)
@@ -21,7 +23,6 @@ class House
         //Initialize variables 
         listOfOwners.clear();
         listOfRooms.clear();
-        anyOneHome = false;
         this->nameOfHouse = nameOfHouse;
 
         //Add originalOwner
@@ -68,10 +69,13 @@ class House
 
     void addFloor()
     {
-        
+
     }
 
-
+    int getNumberOfHouseInstances()
+    {
+        return numberOfHouses;
+    }
 
     ~House ()
     {
